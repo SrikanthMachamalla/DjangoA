@@ -3,5 +3,5 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    context = {"data":"Home Page of Django App!"}
+    context = {"data":"Home Page of Django Apps"}
     return render(request,'demoapp/index.html', context)
