@@ -355,7 +355,7 @@ def index(request):
             'total_tranformer': total_tranformer,
             'total_string': total_string,
         }
-        template_path = 'result1.html'
+        template_path = 'demoapp/index.html'
         pdf = render_to_pdf(template_path,context)
 
         if pdf:
