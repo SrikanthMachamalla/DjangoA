@@ -3,5 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    context = {"data":"Home Page of Django Apps!!"}
-    return render(request,'demoapp/index.html', context)
+    # context = {"data":"Home Page of Django Apps!!"}
+    upload_range = range(1, 13)
+    return render(request, 'demoapp/upload_form.html', upload_range)
+    # return render(request,'demoapp/index.html', context)
